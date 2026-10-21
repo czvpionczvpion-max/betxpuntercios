@@ -52,6 +52,27 @@ button {
   background: #090807;
 }
 
+.photo {
+  position: absolute;
+  inset: -6%;
+  background: url("assets/casino-bg.jpg") left top / cover no-repeat;
+  opacity: 0.95;
+  animation: photo 32s ease-in-out infinite alternate;
+}
+
+.photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 38% 42% at 52% 54%, rgba(9, 8, 7, 0.58), transparent 72%);
+}
+
+@media (min-width: 900px) {
+  .photo {
+    background-position: center 60%;
+  }
+}
+
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -428,6 +449,11 @@ html.age-ok .gate {
   display: block;
 }
 
+@keyframes photo {
+  from { transform: scale(1) translate3d(0, 0, 0); }
+  to { transform: scale(1.07) translate3d(-1.4%, -1%, 0); }
+}
+
 @keyframes drift {
   0%,
   100% { transform: translate3d(0, 0, 0) scale(1); }
@@ -502,6 +528,7 @@ html.age-ok .gate {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .photo,
   .orb,
   .ring,
   .avatar::before {
