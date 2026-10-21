@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIOS — MrPunter i GG.BET</title>
+  <meta name="description" content="MrPunter: do 1450€ + 225 FS. GG.BET: 50 FS Joker Stoker bez depozytu. Kod CIOS." />
+  <meta name="theme-color" content="#090807" />
+  <link rel="icon" href="assets/punter-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    try {
+      if (sessionStorage.getItem("age18") === "1") document.documentElement.classList.add("age-ok");
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <span class="orb orb-gold"></span>
+    <span class="orb orb-orange"></span>
+    <span class="orb orb-mid"></span>
+    <canvas id="net" class="net"></canvas>
+  </div>
+
+  <div class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="gate-mark" id="gate-title">18+</div>
+      <p class="gate-lead">Hazard może uzależniać. Ta strona jest tylko dla osób, które ukończyły 18 lat.</p>
+      <div class="gate-actions">
+        <button type="button" class="btn btn-gold" data-gate="enter">Wchodzę, mam 18+</button>
+        <button type="button" class="btn btn-ghost" data-gate="leave">Nie mam 18 lat</button>
+      </div>
+      <p class="gate-denied">Dostęp zamknięty. Wróć, gdy skończysz 18 lat.</p>
+    </div>
+  </div>
+
+  <main>
+    <header class="hero">
+      <div class="avatar">
+        <span class="ring" aria-hidden="true"></span>
+        <img src="assets/cios.jpg" alt="Cios" width="320" height="400" />
+      </div>
+    </header>
+
+    <section class="pair" aria-label="Bonusy">
+      <article class="card card--gold">
+        <img class="logo" src="assets/punter-logo.png" alt="MrPunter" width="150" height="28" />
+        <p class="eyebrow">Total Bonus Casino</p>
+        <h2>do 1450€ <small>+ 225 FS</small></h2>
+        <ul class="stats">
+          <li><b>120%</b><span>600€</span></li>
+          <li><b>100%</b><span>300€</span></li>
+          <li><b>70%</b><span>350€</span></li>
+          <li><b>70%</b><span>200€</span></li>
+        </ul>
+        <div class="row">
+          <button type="button" class="code" data-copy="CIOS">
+            <span class="copy-label">CIOS</span>
+            <span class="copy-done">OK</span>
+          </button>
+          <a class="btn btn-gold" href="https://mrp.kronvax.com/?mid=391592_2258861" target="_blank" rel="noopener noreferrer">Odbierz</a>
+        </div>
+      </article>
+
+      <article class="card card--orange">
+        <img class="logo logo-gg" src="assets/gg-logo.png" alt="GG.BET" width="140" height="32" />
+        <p class="eyebrow">Bez depozytu</p>
+        <h2>50 FS <small>Joker Stoker</small></h2>
+        <ul class="stats">
+          <li><b>0 zł</b><span>wpłata</span></li>
+          <li><b>50</b><span>spiny</span></li>
+          <li class="wide"><b>Endorphina</b><span>Joker Stoker</span></li>
+        </ul>
+        <div class="row">
+          <button type="button" class="code" data-copy="CIOS">
+            <span class="copy-label">CIOS</span>
+            <span class="copy-done">OK</span>
+          </button>
+          <a class="btn btn-orange" href="https://ggbetbestoffer.com/l/69aeedffa8a22fbe9603ab12?sub_id=popek&amp;sub_id_2=ig" target="_blank" rel="noopener noreferrer sponsored">Odbierz</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <span class="age">18+</span>
+      <p>Hazard może uzależniać. Graj odpowiedzialnie. Warunki u operatora. Strona partnerska.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
